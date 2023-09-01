@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'littlelemonAPI',  # App
     'restaurant',  # App
+    'rest_framework', # DRF
 ]
 
 MIDDLEWARE = [
