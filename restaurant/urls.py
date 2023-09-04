@@ -16,6 +16,5 @@ urlpatterns = [
     # path('booking/<int:pk>', BookingSingleView.as_view(), name='bookings-single'),
 
     path('restaurant/', include(router.urls)), # Routers
-
 ]
 
