@@ -40,9 +40,9 @@ INSTALLED_APPS = [
 
     'littlelemonAPI',  # App
     'restaurant',  # App
-    'rest_framework', # DRF
+    'rest_framework',  # DRF
     'rest_framework.authtoken',
-    'djoser', # 3rd Authentication Library
+    'djoser',  # 3rd Authentication Library
 ]
 
 MIDDLEWARE = [
@@ -82,11 +82,13 @@ WSGI_APPLICATION = 'littlelemon_jade.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'reservations',
+        # 'NAME': 'reservations',
+        'NAME': 'll_reservations',
         'PORT': '3306',
         'HOST': '127.0.0.1',
         'USER': 'root',
-        'PASSWORD': '',
+        # 'PASSWORD': '',
+        'PASSWORD': 'password',
     }
     # 'default': {
     #     'ENGINE': 'django.db.backends.sqlite3',
