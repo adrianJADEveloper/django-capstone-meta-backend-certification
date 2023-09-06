@@ -15,9 +15,9 @@ from rest_framework import viewsets
 def homeRestaurant(request):
     return HttpResponse('Hello World! from the Restaurant App!')
 
-class MenuItemsView(generics.ListCreateAPIView):
-    queryset = Menu.objects.all()
-    serializer_class = MenuSerializer
+# class MenuItemsView(generics.ListCreateAPIView):
+#     queryset = Menu.objects.all()
+#     serializer_class = MenuSerializer
 
 class SingleMenuItemView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Menu.objects.all()
@@ -45,3 +45,6 @@ class UserViewSet(viewsets.ModelViewSet):
     serializer_class = UserSerializer
     permission_classes = [IsAuthenticated]
 
+class MenuItemsViewSet(viewsets.ModelViewSet):
+    queryset = Menu.objects.all()
+    serializer_class = MenuSerializer
